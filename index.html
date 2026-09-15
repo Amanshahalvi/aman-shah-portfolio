@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aman Shah — Motion Video Editor</title>
+<meta name="description" content="Aman Shah — Motion Video Editor portfolio">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--bg:#070707;--fg:#f5f3ee;--muted:#8b8b8b;--line:#242424}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:"DM Sans",Arial,sans-serif}a{color:inherit;text-decoration:none}.page{max-width:1440px;margin:auto;padding:0 42px}
+nav{height:84px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2}.brand{font:700 20px "Space Grotesk";letter-spacing:-.06em}.navright{display:flex;gap:28px;align-items:center;font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:#999}.navright a:hover{color:#fff}
+.hero{min-height:calc(100vh - 84px);display:flex;flex-direction:column;justify-content:center;padding:90px 0 75px;position:relative}.eyebrow{font-size:10px;letter-spacing:.22em;color:#777;text-transform:uppercase;margin-bottom:24px}.hero h1{font:600 clamp(76px,12vw,180px)/.79 "Space Grotesk";letter-spacing:-.085em;margin:0;max-width:1250px}.hero h1 span{color:#777}.hero-bottom{display:flex;justify-content:space-between;align-items:end;margin-top:75px;gap:40px}.hero-copy{max-width:510px;color:#999;line-height:1.65;font-size:14px}.hero-copy b{color:#eee;font-weight:500}.outline-btn{border:1px solid #555;padding:15px 20px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;transition:.25s}.outline-btn:hover{background:#f5f3ee;color:#070707}
+.section{padding:90px 0}.section-top{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:14px;margin-bottom:32px}.label{font-size:10px;letter-spacing:.2em;color:#888;text-transform:uppercase}.count{font-size:10px;color:#555;letter-spacing:.16em}
+.featured-wrap{display:grid;grid-template-columns:1fr 260px;gap:30px}.project{display:block}.visual{height:390px;background:radial-gradient(circle at 70% 30%,#303030 0,#141414 32%,#090909 72%);border:1px solid #292929;position:relative;overflow:hidden;transition:.4s}.project:hover .visual{border-color:#777;transform:translateY(-4px)}.hero-project .visual{height:620px}.visual:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,.045));pointer-events:none}.index{position:absolute;left:20px;top:18px;color:#777;font-size:10px;letter-spacing:.12em}.play{position:absolute;right:20px;top:18px;color:#aaa;font-size:9px;letter-spacing:.16em}.visual h3{position:absolute;left:24px;bottom:22px;margin:0;font:600 clamp(36px,6vw,86px)/.9 "Space Grotesk";letter-spacing:-.07em}.project-meta{display:flex;justify-content:space-between;padding:11px 1px;color:#666;font-size:8px;letter-spacing:.17em}
+.categories{display:grid;grid-template-columns:1fr 1fr}.cat{min-height:105px;border-top:1px solid var(--line);display:grid;grid-template-columns:65px 1fr 30px;align-items:center;gap:20px;transition:.25s}.cat:hover{padding-left:12px;background:#0d0d0d}.cat span{color:#555;font-size:9px;letter-spacing:.12em}.cat strong{font:500 clamp(21px,2.4vw,34px) "Space Grotesk";letter-spacing:-.045em}.cat i{font-style:normal;color:#666;text-align:right}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.work-grid .project:nth-child(1){grid-column:1/-1}.work-grid .project:nth-child(1) .visual{height:520px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stat{padding:35px 0;border-right:1px solid var(--line)}.stat:last-child{border:0;padding-left:30px}.stat:not(:first-child){padding-left:30px}.stat strong{display:block;font:600 clamp(45px,6vw,80px) "Space Grotesk";letter-spacing:-.07em}.stat span{font-size:9px;letter-spacing:.18em;color:#777;text-transform:uppercase}
+.about{display:grid;grid-template-columns:1fr 2fr;gap:60px}.about h2{font-size:10px;letter-spacing:.2em;color:#777;text-transform:uppercase}.about p{margin:0;font:500 clamp(32px,4.5vw,64px)/1 "Space Grotesk";letter-spacing:-.06em}.about em{font-style:normal;color:#777}
+.contact{min-height:65vh;display:flex;flex-direction:column;justify-content:center;border-top:1px solid var(--line)}.contact small{font-size:10px;letter-spacing:.2em;color:#777;text-transform:uppercase}.contact h2{font:600 clamp(58px,10vw,145px)/.82 "Space Grotesk";letter-spacing:-.08em;margin:22px 0 45px}.contact h2 span{color:#777}.contact a{width:max-content;font-size:11px;letter-spacing:.17em;text-transform:uppercase;border-bottom:1px solid #777;padding-bottom:8px}
+footer{border-top:1px solid var(--line);padding:25px 0 35px;display:flex;justify-content:space-between;color:#555;font-size:9px;letter-spacing:.13em;text-transform:uppercase}
+@media(max-width:800px){.page{padding:0 20px}nav{height:70px}.navright a:first-child{display:none}.hero{min-height:auto;padding:85px 0}.hero h1{font-size:20vw}.hero-bottom{display:block;margin-top:55px}.outline-btn{display:inline-block;margin-top:28px}.section{padding:65px 0}.featured-wrap,.about{display:block}.hero-project .visual,.work-grid .project:nth-child(1) .visual{height:55vh;min-height:360px}.categories,.work-grid{grid-template-columns:1fr}.cat{min-height:88px}.stats{grid-template-columns:1fr}.stat,.stat:not(:first-child),.stat:last-child{border-right:0;border-bottom:1px solid var(--line);padding:25px 0}.stat:last-child{border-bottom:0}.about p{margin-top:30px}.contact{min-height:55vh}.contact h2{font-size:19vw}footer{display:block;line-height:2}}
+</style>
+</head>
+<body>
+<div class="page">
+<nav><div class="brand">AMAN SHAH®</div><div class="navright"><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact ↗</a></div></nav>
+<header class="hero">
+<div class="eyebrow">Motion Video Editor / Independent Creative</div>
+<h1>MAKE<br><span>IDEAS</span><br>MOVE.</h1>
+<div class="hero-bottom"><div class="hero-copy">I’m <b>Aman Shah</b>, a Motion Video Editor creating concept reels, UGC, motion graphics, product films and cinematic edits designed to stop the scroll.</div><a class="outline-btn" href="#work">View selected work ↓</a></div>
+</header>
+
+<section class="section" id="work">
+<div class="section-top"><div class="label">Featured / 01</div><div class="count">BEST WORK</div></div>
+<div class="featured-wrap"><a class="project hero-project" href="https://drive.google.com/file/d/1Wruc-aa-dxkAwtzfyf3f1GJOO7A9-hj4/view" target="_blank" rel="noopener">
+      <div class="visual"><span class="index">01</span><span class="play">PLAY ↗</span><h3>Altera</h3></div>
+      <div class="project-meta"><span>FEATURED PROJECT</span><span>WATCH PROJECT</span></div>
+    </a><div class="hero-copy" style="align-self:end;padding-bottom:38px"><div class="label" style="margin-bottom:18px">Altera</div><div style="font:500 22px/1.25 'Space Grotesk';color:#ddd">A featured edit built around rhythm, visual direction and motion.</div><div style="margin-top:25px;color:#666;font-size:11px;line-height:1.6">Click to open the full project.</div></div></div>
+</section>
+
+<section class="section" id="services">
+<div class="section-top"><div class="label">Capabilities</div><div class="count">10 CATEGORIES</div></div>
+<div class="categories"><a class="cat" href="https://drive.google.com/drive/folders/14HH-sb2go2KIGtK5JSY0OxetuobAjytU/view" target="_blank" rel="noopener"><span>01</span><strong>Clothes Brand Reels</strong><i>↗</i></a><a class="cat" href="https://drive.google.com/drive/folders/1E4R7vgG3pqMZ-G0-hu37-WdZ9BRI8k6b/view" target="_blank" rel="noopener"><span>02</span><strong>Food Motion Graphics</strong><i>↗</i></a><a class="cat" href="https://drive.google.com/drive/folders/1vyibRO8U78rCEaSb46xX9pXUzZE5bGO_/view" target="_blank" rel="noopener"><span>03</span><strong>Graphic Design</strong><i>↗</i></a><a class="cat" href="https://drive.google.com/drive/folders/1lIQ5PYXzPv3V4J9zYbioydCUX0H4yPpF/view" target="_blank" rel="noopener"><span>04</span><strong>Jewellery Edits</strong><i>↗</i></a><a class="cat" href="https://drive.google.com/drive/folders/1MSc63eQXI-h5mO5KcfM0M7MOMlwmnIS4/view" target="_blank" rel="noopener"><span>05</span><strong>Logo Animation</strong><i>↗</i></a><a class="cat" href="https://drive.google.com/drive/folders/14gfC5XWam7ul3fKMkYB8l14-nIdjyB3D/view" target="_blank" rel="noopener"><span>06</span><strong>Model Shoot Edits</strong><i>↗</i></a><a class="cat" href="https://drive.google.com/drive/folders/1r514imvoUyApLI3TzCQA59Pm68rNfJ7c/view" target="_blank" rel="noopener"><span>07</span><strong>Motion Graphics</strong><i>↗</i></a><a class="cat" href="https://drive.google.com/drive/folders/1U4_sa9rXcxmUTNIg6m3FK-9yAetzZjwA/view" target="_blank" rel="noopener"><span>08</span><strong>Product Shoot Edits</strong><i>↗</i></a><a class="cat" href="https://drive.google.com/drive/folders/1BxzxDpCL9sQIOSKaWt2YEuQOl-l8Nu37/view" target="_blank" rel="noopener"><span>09</span><strong>Reels Editing</strong><i>↗</i></a><a class="cat" href="https://drive.google.com/drive/folders/1bL6Xuz8KMu5mNZ0ZBjak9xWC1cl2WqPO/view" target="_blank" rel="noopener"><span>10</span><strong>Wedding Highlights</strong><i>↗</i></a></div></section>
+
+<section class="section">
+<div class="section-top"><div class="label">Selected Work</div><div class="count">07 PROJECTS</div></div>
+<div class="work-grid"><a class="project " href="https://drive.google.com/file/d/14-u1Bx-r0YWC-1DhDOlO6VjfwuUwjs7-/view" target="_blank" rel="noopener">
+      <div class="visual"><span class="index">02</span><span class="play">PLAY ↗</span><h3>Project 02</h3></div>
+      <div class="project-meta"><span>MOTION / EDITING</span><span>WATCH PROJECT</span></div>
+    </a><a class="project " href="https://drive.google.com/file/d/1JiTcTevvne0x-UwIjlhZ4XlU2JMNJO-S/view" target="_blank" rel="noopener">
+      <div class="visual"><span class="index">03</span><span class="play">PLAY ↗</span><h3>Project 03</h3></div>
+      <div class="project-meta"><span>MOTION / EDITING</span><span>WATCH PROJECT</span></div>
+    </a><a class="project " href="https://drive.google.com/file/d/15owhB0_YiY4BKHHWeb1bmGoHIZ1p15AE/view" target="_blank" rel="noopener">
+      <div class="visual"><span class="index">04</span><span class="play">PLAY ↗</span><h3>Project 04</h3></div>
+      <div class="project-meta"><span>MOTION / EDITING</span><span>WATCH PROJECT</span></div>
+    </a><a class="project " href="https://drive.google.com/file/d/121P4j1z-D9cuEKuPhg8NXtGgfV6WGMl6/view" target="_blank" rel="noopener">
+      <div class="visual"><span class="index">05</span><span class="play">PLAY ↗</span><h3>Project 05</h3></div>
+      <div class="project-meta"><span>MOTION / EDITING</span><span>WATCH PROJECT</span></div>
+    </a><a class="project " href="https://drive.google.com/file/d/1zRXGgum7EWnlxr0S1NhLfRRt63kgYMV5/view" target="_blank" rel="noopener">
+      <div class="visual"><span class="index">06</span><span class="play">PLAY ↗</span><h3>Project 06</h3></div>
+      <div class="project-meta"><span>MOTION / EDITING</span><span>WATCH PROJECT</span></div>
+    </a><a class="project " href="https://drive.google.com/file/d/1B1-Q-V0t5zCn6ugasZdjA2OIgRDP8Qky/view" target="_blank" rel="noopener">
+      <div class="visual"><span class="index">07</span><span class="play">PLAY ↗</span><h3>Project 07</h3></div>
+      <div class="project-meta"><span>MOTION / EDITING</span><span>WATCH PROJECT</span></div>
+    </a></div>
+</section>
+
+<section class="section"><div class="stats"><div class="stat"><strong>3+</strong><span>Years Editing</span></div><div class="stat"><strong>500+</strong><span>Videos Created</span></div><div class="stat"><strong>10</strong><span>Creative Categories</span></div></div></section>
+
+<section class="section about"><h2>About / Aman</h2><p>Editing is more than cutting clips. It’s about finding the <em>right rhythm, movement and emotion</em> to make an idea impossible to ignore.</p></section>
+
+<section class="contact" id="contact"><small>Available for creative work</small><h2>LET’S MAKE<br><span>SOMETHING MOVE.</span></h2><a href="https://www.instagram.com/" target="_blank" rel="noopener">GET IN TOUCH ↗</a></section>
+<footer><span>AMAN SHAH — MOTION VIDEO EDITOR</span><span>© 2026</span></footer>
+</div>
+</body></html>
